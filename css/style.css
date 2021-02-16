@@ -29,9 +29,7 @@ h3 {
   text-transform: uppercase;
   color: #77829d;
 }
-section {
-  height: 30vh;
-}
+
 .sponsor_wrap {
   height: calc(100% - 37px);
   display: flex;
@@ -40,14 +38,15 @@ section {
   justify-content: center;
   /* background-color: pink; */
 }
+
 .sponsor_card {
   height: auto;
-  display: inline;
-  width: calc(100% / 6);
+  display: inline-block;
 }
 
-
-
+.sponsor_card img {
+  margin: 50px 26px;
+}
 
 .see {
   display: block;
@@ -55,3 +54,25 @@ section {
   font-weight: normal;
   color: #056aff;
 }
+
+/* responsive */
+@media screen and (max-width: 1400px) {
+  .sponsor_card img {
+    margin: 50px 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sponsor_card img {
+    margin: 50px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+/* /responsive */
